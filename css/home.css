@@ -1,0 +1,281 @@
+/* BASE STYLES ---------------------- */
+/*body:before {
+    background: url(../img/homeb-g.jpg) no-repeat center / cover;
+	background-attachment: fixed;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	filter:
+}*/
+body{
+            margin: 0;
+            padding: 0;
+        }
+        
+main {
+    min-height: 100vh;
+	margin-top:25px;
+}
+
+/* NAV-BAR */
+.default-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    background: transparent
+}
+
+.default-header .navbar {
+    padding: 22px 16px
+}
+
+.navbar-nav a:hover, .navbar-nav a.active {
+    color: #cea06c;
+    text-decoration: none
+}
+
+.navbar-nav a {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    padding: 32px 20px
+}
+
+.row{
+	animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+
+/* HOME TITLE STILES */
+
+#title {
+    position: fixed;
+    top: 40%;
+    right: -15%;	
+	animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        } 
+#title img {
+    max-width: 700px;
+    display: block;
+    margin: auto;
+}
+
+#title .about {
+    max-width: 100vw;
+    text-align: right;
+    width: 70%;
+    margin-right: auto;
+
+    border-right: 5px solid #343A40;
+    padding: 0 1rem;
+}
+
+/* CONTACT FORM STYLES ------------- */
+
+#main-form {
+    background: rgba(0,0,0, .60);
+    border-radius: 15px;
+    position: absolute;
+    min-width: 35rem;
+    float:left;
+	margin-left:35px;
+    top: 30%;
+
+    
+
+}
+
+#map-section {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5px;
+	
+    position: relative;
+    overflow-x: hidden;
+}
+
+#map {
+    display: block;
+    margin: auto;
+	float:right;
+	margin-right:35px;
+	
+}
+
+#map body iframe {
+    max-width: 100% !important;
+}
+/* REGISTRATION STYLES --------- */
+
+.registration-box {
+    background: rgba(0,0,0, .60);
+    border-radius: 15px;
+}
+
+/* MEDIA QUERIES -------------- */
+
+@media (max-width: 1610px) {
+    #title {
+        right: -20%;
+    }
+    @keyframes slide-in {
+        from {
+            right: -100%;
+        }
+
+        to {
+            right: -20%;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    #title {
+        right: -15%;
+    }
+
+    #title h1 {
+        font-size: 3rem;
+    }
+
+    #title img {
+        max-width: 400px;
+    }
+    @keyframes slide-in {
+        from {
+            right: -100%;
+        }
+
+        to {
+            right: -15%;
+        }
+    }
+
+    #main-form {
+        right: 2.5%;
+    }
+    
+    @keyframes slide-in-form {
+        from {
+            right: -200%;
+        }
+
+        to {
+            right: 2.5%;
+        }
+    }
+}
+
+@media (max-width: 1175px) {
+    #title {
+        right: 0%;
+        padding-top: 2rem;
+    }
+
+    #title h1 {
+        font-size: 3rem;
+        text-align: right !important;
+        margin-right: 6rem;
+    }
+
+    #title img {
+        max-width: 50vw;
+        margin-right: 6rem;
+    }
+
+    #title .about {
+        width: 90%;
+        padding-left: 5rem;
+    }
+
+    @keyframes slide-in {
+        from {
+            right: -100%;
+        }
+
+        to {
+            right: 0%;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    #title .about {
+        width: 100%;
+        padding-left: 0 !important;
+        margin-bottom: 1rem;
+    }
+    #title .about p {
+        font-size: 1rem;
+    }
+
+    #title .about h3 {
+        margin-top: 20rem;
+        font-size: 2rem !important;
+    }
+
+    #title h1 {
+        text-align: center !important;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        background-position: 20.5% 10%;
+    }
+
+    #title {
+        top: 15%;
+        font-size: 2rem;
+    }
+
+    #main-form {
+        min-width: 1rem;
+        max-width: 100vw;
+        top: 32.5%;
+        left: 0;
+        right: 0 !important;
+    }
+
+    #main-form form {
+        padding: 0 !important;
+    }
+
+    #main-form a {
+        text-align: center;
+    }
+}
+
+.col-12.mx-auto h1{
+	font-family:Garamond;
+	font-weight:6px;
+	letter-spacing:4px;
+}
+.col-12.mx-auto h3{
+	font-family:Garamond;
+	font-weight:3px;
+	letter-spacing:2px;
+	text-decoration:bold;
+	color:#000050;
+	font-size:46px;
+}
+.col-12.mx-auto p{
+	font-family:inherit;
+	font-weight:3px;
+	text-decoration:bold;
+	color:#000050;
+}

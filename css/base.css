@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden; 
+
+}   
+
+.container {
+    width: 100vw;
+    min-height: calc(100vh - 105px);
+    position: relative;
+}
+
+#main-nav {
+    z-index: 10;
+}
+
+ul {
+    list-style: none;
+}
+
+.logo {
+    max-width: 120px;
+}
